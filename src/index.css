@@ -1,13 +1,263 @@
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
 body {
+  background: #fff;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  background: #f1f1f1ff;
 }
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: #333;
+  text-decoration: none;
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin-left: 10px;
+}
+/* auth forms */
+form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+nav button {
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 10px;
+}
+
+.nav-item{
+  margin-right: 100px;
+  color: var(--primary);
+  font-family: "Poppins";
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.dashboard{
+  display: flex;
+  justify-content: space-between; /* Align items in the container */
+  align-items: center;
+}
+
+
+
+/* Home grid layout styles */
+.home {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px;
+}
+
+label,
+input {
+  display: block;
+}
+
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.text-area {
+  width: 100%;
+  height: 150px; /* Adjust the height as needed */
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between; /* Aligns items with space between */
+  align-items: center; /* Align items vertically in the center */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.social-icons,
+.mail,
+.phone {
+  display: flex;
+  align-items: center;
+   /* Align items vertically in the center */
+   margin-left: 30px;
+   margin-right: 30px;
+}
+
+/* Adjust icon sizes and other styles as needed */
+.container-header > div > svg {
+  /* Styles for the icons */
+  width: 24px;
+  height: 24px;
+  /* Add other icon-related styles here */
+}
+
+/* Optional: Style the paragraphs or text within the social-icons, mail, and phone divs */
+.mail p,
+.phone p {
+  margin-left: 5px; /* Adjust spacing between icon and text */
+}
+
+
+.straight-line {
+  width: 100%; /* Adjust the width as needed */
+  height: 1px; /* Adjust the height/thickness of the line */
+  background-color: #000; /* Change the color of the line */
+  /* Optionally, you can add more styles like margins, padding, etc. */
+}
+
+
+.Navbarr {
+  display: flex;
+  justify-content: space-around; /* Distribute space between buttons */
+  align-items: center; /* Align items vertically centered */
+  background-color: #fff; /* Change background color if needed */
+  padding: 20px; /* Add padding if desired */
+}
+
+.Navbarr button {
+  border: none;
+  background-color: transparent;
+  padding: 8px 20px; /* Adjust padding horizontally */
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left;
+  color: #333;
+}
+
+.Navbarr button:hover {
+  background-color: #ddd; /* Change background color on hover */
+}
+
+
+
+.vertical-line {
+  border-left: 1px solid #000; /* Change the color, thickness, and style of the line */
+  height: 80px; /* Adjust the height of the line */
+  /* Optionally, you can add more styles like margin, padding, etc. */
+  margin-left: 10px;
+}
+
+.container-header h2{
+  padding-left: 20px;
+}
+.button-container {
+  width: 200px; /* Set the width of the container */
+  height: 50px; /* Set the height of the container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-button {
+  width: 100%; /* Make the button take the whole width of its container */
+  height: 100%; /* Make the button take the whole height of its container */
+  border: none; /* Remove button border */
+  background-color: transparent; /* Make button background transparent */
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold; /* Set text to bold */
+  color: #101046;
+  margin: 0 auto; /* Set text color to dark blue */
+}
+
+/* Optional hover effect */
+.start-button:hover {
+  text-decoration: underline; /* Underline text on hover */
+}
+
+.home-container {
+  width: 100%; /* Set the width of the container */
+  max-width: 1200px; /* Set a maximum width if needed */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add padding if desired */
+}
+
+.row {
+  display: flex; /* Use flexbox for the row layout */
+  justify-content: space-between; /* Align items with space between them */
+  align-items: center; /* Align items vertically in the center */
+}
+
+/* Define styles for the parent container */
+.parent-container {
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+  align-items: center; /* Center children horizontally */
+  /* Additional styles can be added here */
+}
+
+.top-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 20px;
+  /* Additional styles for the top div */
+}
+

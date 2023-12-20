@@ -1,0 +1,101 @@
+.cover-component {
+position: relative;
+width: 100%;
+height: 400px;
+/* Add any other necessary styles */
+}
+
+.landing-image-container {
+position: relative;
+width: 100%;
+height: 100%;
+}
+
+.landing-image-container img {
+width: 100%;
+height: 120%; /* Increase the height to cover the component */
+object-fit: cover;
+}
+
+.text-overlay {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: white;
+}
+
+.text-overlay h1 {
+margin-bottom: 20px; /* Adjust spacing between h1 and button */
+}
+
+.text-overlay button {
+padding: 10px 20px;
+background-color: #faf600;
+color: rgb(0, 0, 0);
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+margin-top: 50px;
+/* Add any other necessary styles */
+}
+
+.input-values {
+
+position: relative;
+background-color: #fff; /* Set background color */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+margin-top: 20px;
+max-width: 70%;
+margin-left: 20%;
+margin-right: 20%;
+border-radius: 5px;
+
+}
+
+.input-div-text {
+display: flex;
+align-items: center;
+margin-left: 40%;
+}
+
+
+.input-values input {
+margin-bottom: 10px; /* Adjust spacing between input fields */
+padding: 8px;
+width: 200px;
+    /* Adjust input field width */
+/* Add any other necessary styles */
+margin: 20px;
+}
+
+.input-div {
+display: flex;
+justify-content: space-between; /* Adjust this property based on spacing needs */
+align-items: center; /* Align items vertically in the center */
+}
+
+.input-div input,
+.input-div button {
+/* Additional styling for inputs and button */
+padding: 8px 12px;
+/* Add more styles as needed */
+}
+
+.input-div button {
+background-color: #00a093;
+margin-bottom: 10px; /* Adjust spacing between input fields */
+width: 200px;
+    /* Adjust input field width */
+/* Add any other necessary styles */
+margin: 20px;
+color: #fff;
+border: none;
+border-radius: 3px;
+}
+
+.donate-btn {
+    width: 50px;
+}

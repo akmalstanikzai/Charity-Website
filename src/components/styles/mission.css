@@ -1,0 +1,77 @@
+.mission-container {
+    display: flex;
+    flex-direction: column; /* Align elements vertically */
+    align-items: center; /* Center elements horizontally */
+    /* Additional styles for the container */
+}
+  
+.text {
+     /* Add margin between elements */
+    /* Additional styles for the elements */
+    display: flex;
+    flex-direction: column; /* Align elements vertically */
+    align-items: center;
+    padding: 0.5em 0.5em;
+}
+  
+.mission-options-container{
+  display: flex;
+   /* Use flexbox */
+   flex-direction: row;
+  justify-content: space-around;
+  
+}
+/* CSS to style the elements inside the .mission-items container */
+.mission-items {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Align items horizontally */
+  text-align: center;
+   /* Center text */
+  max-width: 20%;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 50px;
+  background-color: #ffffff; /* Set background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  border-radius: 5px;
+  
+}
+.mission-items h3 {
+  color:#2a0a53;
+}
+.mission-items img {
+  max-width: 100px; /* Adjust the maximum width of the image */
+  height: auto; /* Maintain the aspect ratio */
+  margin-bottom: 10px; /* Add margin between image and text */
+}
+
+/* Other styles for h3 and p tags */
+.mission-items h3 {
+  font-size: 24px; /* Adjust the font size for the heading */
+  margin: 10px 0; /* Remove default margin */
+}
+
+.mission-items p {
+  font-size: 16px; /* Adjust the font size for the paragraph */
+  margin: 5px 0; /* Remove default margin */
+}
+
+.mission-custom-container {
+  margin-top: 200px;
+}
+
+.text p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.text h2 {
+  margin: 5px 0;
+  color: #2a0a53;
+}
+
+.mission-text{
+  color: #00a093;
+}
